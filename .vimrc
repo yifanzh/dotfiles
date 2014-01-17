@@ -1,8 +1,5 @@
 " General settings
 syntax on
-if &t_Co > 2 || has('gui_running')
-   colorscheme solarized
-endif
 
 set hlsearch
 set nocompatible
@@ -17,12 +14,6 @@ set backspace=indent,eol,start
 set statusline=[%02n]\ %f\ %(\[%M%R%H]%)%=\ %4l,%02c%2V\ %P%*
 set laststatus=2
 set mouse=a
-
-if has('gui_running')
-   set lines=37
-   set columns=140
-   set guifont=Consolas:h11
-endif
 
 highlight Pmenu ctermbg=blue ctermfg=white
 highlight PmenuSel ctermbg=white ctermfg=black
