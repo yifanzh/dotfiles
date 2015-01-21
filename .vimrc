@@ -24,8 +24,9 @@ nnoremap <CR> :noh<CR><CR>
 set foldmethod=marker
 set textwidth=80
 set formatoptions=cqwn
-set cindent
 set autoindent
+set smartindent
+filetype indent on
 
 set softtabstop=4
 set shiftwidth=4
