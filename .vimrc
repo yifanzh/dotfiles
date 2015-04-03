@@ -1,4 +1,5 @@
 " General settings
+execute pathogen#infect()
 syntax on
 
 set hlsearch
@@ -26,7 +27,7 @@ set textwidth=80
 set formatoptions=cqwn
 set autoindent
 set smartindent
-filetype indent on
+filetype plugin indent on
 
 set softtabstop=4
 set shiftwidth=4
@@ -48,6 +49,10 @@ imap <MiddleMouse> <Nop>
 imap <2-MiddleMouse> <Nop>
 imap <3-MiddleMouse> <Nop>
 imap <4-MiddleMouse> <Nop>
+
+if &diff
+    set diffopt+=iwhite " diff mode
+endif
 
 au BufRead,BufNewFile *.sqC set filetype=cpp
 au BufRead,BufNewFile *.sqc set filetype=c
