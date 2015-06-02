@@ -1,5 +1,4 @@
 " General settings
-execute pathogen#infect()
 syntax on
 
 set hlsearch
