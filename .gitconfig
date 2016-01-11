@@ -1,0 +1,9 @@
+[push]
+	default = simple
+[user]
+	email = yifan.zhang@uwaterloo.ca
+	name = Yifan Zhang
+[core]
+	excludesfile = ~/.gitignore_global
+[alias]
+    dag = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
