@@ -32,6 +32,9 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+" Disable connection to X11
+set clipboard=exclude:.*
+
 " Key mapping
 map j gj
 map k gk
