@@ -79,9 +79,10 @@ export GREP_COLOR='1;32'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias office="ssh -Y -p 22 y346zhan@scspc541.cs.uwaterloo.ca"
-alias officevm="ssh -Y y346zhan@scspc541.cs.uwaterloo.ca -p 2222"
+alias office="ssh -AY -p 22 y346zhan@scspc541.cs.uwaterloo.ca"
+#alias officevm="ssh -Y y346zhan@scspc541.cs.uwaterloo.ca -p 2222"
 alias student="ssh -Y y346zhan@linux.student.cs.uwaterloo.ca"
+alias cs450="ssh cs450@ubuntu1204-002.student.cs.uwaterloo.ca"
 #export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 
