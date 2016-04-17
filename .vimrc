@@ -21,7 +21,7 @@ set pastetoggle=<F4>
 nnoremap <CR> :noh<CR><CR>
 
 " Program editing
-set foldmethod=marker
+set foldmethod=syntax
 set textwidth=80
 set formatoptions=cqwn
 set autoindent
@@ -38,8 +38,9 @@ set clipboard=exclude:.*
 " Key mapping
 map j gj
 map k gk
-nmap <F3> a<C-R>=strftime("%A %Y-%m-%d %H:%M:%S")<CR><Esc>
-imap <F3> <C-R>=strftime("%A %Y-%m-%d %H:%M:%S")<CR>
+" nmap <F3> a<C-R>=strftime("%A %Y-%m-%d %H:%M:%S")<CR><Esc>
+" imap <F3> <C-R>=strftime("%A %Y-%m-%d %H:%M:%S")<CR>
+nmap <F3> zA
 nmap <F2> za
 imap <F2> <Esc>zai
 
