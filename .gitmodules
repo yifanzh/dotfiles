@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule ".vim/bundle/cscope_maps"]
+	path = .vim/bundle/cscope_maps
+	url = https://github.com/chazy/cscope_maps
