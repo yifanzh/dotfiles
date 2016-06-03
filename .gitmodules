@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/vim-monokai"]
 	path = .vim/bundle/vim-monokai
 	url = https://github.com/sickill/vim-monokai
+[submodule ".vim/bundle/vim-textobj-argument"]
+	path = .vim/bundle/vim-textobj-argument
+	url = https://github.com/gaving/vim-textobj-argument
