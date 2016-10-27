@@ -81,16 +81,13 @@ export GREP_COLOR='1;32'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias office="ssh -AY -p 22 y346zhan@scspc541.cs.uwaterloo.ca"
-#alias officevm="ssh -Y y346zhan@scspc541.cs.uwaterloo.ca -p 2222"
-alias student="ssh -Y y346zhan@linux.student.cs.uwaterloo.ca"
-alias cs450="ssh cs450@ubuntu1204-002.student.cs.uwaterloo.ca"
+alias mof="mosh y346zhan@scspc541.cs.uwaterloo.ca"
 #export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 
 # F1-F4 for frequent directories
-bindkey -s '^[OP' 'cd ~/Downloads\n'
-bindkey -s '^[OQ' 'cd ~/workplace\n'
+bindkey -s '^[OP' 'cd ~/workplace\n'
+bindkey -s '^[OQ' 'cd ~/Downloads\n'
 bindkey -s '^[OR' 'cd ~/Desktop\n'
 
 # F5-F8 for frequent commands
