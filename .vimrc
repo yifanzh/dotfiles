@@ -1,3 +1,5 @@
+source ~/.localrc
+
 " General settings
 syntax on
 
@@ -28,8 +30,8 @@ set autoindent
 set smartindent
 filetype plugin indent on
 
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 
 " Disable connection to X11
@@ -59,5 +61,3 @@ endif
 
 au BufRead,BufNewFile *.sqC set filetype=cpp
 au BufRead,BufNewFile *.sqc set filetype=c
-
-source ~/.localrc
