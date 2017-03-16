@@ -16,6 +16,9 @@ set backspace=indent,eol,start
 set statusline=[%02n]\ %f\ %(\[%M%R%H]%)%=\ %4l,%02c%2V\ %P%*
 set laststatus=2
 set mouse=a
+set modeline
+set modelines=5
+set wildignorecase " ignore case when completing filenames and directories
 
 highlight Pmenu ctermbg=blue ctermfg=white
 highlight PmenuSel ctermbg=white ctermfg=black
