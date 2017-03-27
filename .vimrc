@@ -45,9 +45,13 @@ map j gj
 map k gk
 " nmap <F3> a<C-R>=strftime("%A %Y-%m-%d %H:%M:%S")<CR><Esc>
 " imap <F3> <C-R>=strftime("%A %Y-%m-%d %H:%M:%S")<CR>
-nmap <F3> zA
-nmap <F2> za
-imap <F2> <Esc>zai
+nnoremap <F3> zA
+nnoremap <F2> za
+inoremap <F2> <Esc>zai
+inoremap <F5> <Esc>:tabprevious<CR>
+nnoremap <F5> :tabprevious<CR>
+inoremap <F6> <Esc>:tabnext<CR>
+nnoremap <F6> :tabnext<CR>
 
 map <MiddleMouse> <Nop>
 map <2-MiddleMouse> <Nop>
