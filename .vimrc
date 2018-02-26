@@ -28,7 +28,7 @@ nnoremap <CR> :noh<CR><CR>
 " Program editing
 set foldmethod=syntax
 set textwidth=80
-set formatoptions=cqwn
+set formatoptions+=orj
 set autoindent
 set smartindent
 filetype plugin indent on
@@ -52,6 +52,7 @@ inoremap <F5> <Esc>:tabprevious<CR>
 nnoremap <F5> :tabprevious<CR>
 inoremap <F6> <Esc>:tabnext<CR>
 nnoremap <F6> :tabnext<CR>
+inoremap <F4> =system("cite")<CR>
 
 map <MiddleMouse> <Nop>
 map <2-MiddleMouse> <Nop>
@@ -68,3 +69,7 @@ endif
 
 au BufRead,BufNewFile *.sqC set filetype=cpp
 au BufRead,BufNewFile *.sqc set filetype=c
+au FileType gnuplot setlocal fo-=t fo-=a
+
+" let g:tex_flavor = "latex"
+" let g:tex_fold_enabled=1
