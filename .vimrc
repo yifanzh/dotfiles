@@ -1,8 +1,8 @@
 source ~/.localrc
+syntax on
+filetype plugin indent on
 
 " General settings
-syntax on
-
 set hlsearch
 set nocompatible
 set ruler
@@ -22,7 +22,6 @@ set wildignorecase " ignore case when completing filenames and directories
 
 highlight Pmenu ctermbg=blue ctermfg=white
 highlight PmenuSel ctermbg=white ctermfg=black
-set pastetoggle=<F4>
 nnoremap <CR> :noh<CR><CR>
 
 " Program editing
@@ -31,7 +30,6 @@ set textwidth=80
 set formatoptions+=orj
 set autoindent
 set smartindent
-filetype plugin indent on
 
 set softtabstop=2
 set shiftwidth=2
@@ -45,14 +43,19 @@ map j gj
 map k gk
 " nmap <F3> a<C-R>=strftime("%A %Y-%m-%d %H:%M:%S")<CR><Esc>
 " imap <F3> <C-R>=strftime("%A %Y-%m-%d %H:%M:%S")<CR>
-nnoremap <F3> zA
 nnoremap <F2> za
 inoremap <F2> <Esc>zai
+nnoremap <F3> zA
+nnoremap <F4> zi
+inoremap <F4> <Esc>zi
+
 inoremap <F5> <Esc>:tabprevious<CR>
 nnoremap <F5> :tabprevious<CR>
 inoremap <F6> <Esc>:tabnext<CR>
 nnoremap <F6> :tabnext<CR>
-inoremap <F4> =system("cite")<CR>
+inoremap <F7> =system("cite")<CR>
+
+set pastetoggle=<F12>
 
 map <MiddleMouse> <Nop>
 map <2-MiddleMouse> <Nop>
@@ -71,5 +74,5 @@ au BufRead,BufNewFile *.sqC set filetype=cpp
 au BufRead,BufNewFile *.sqc set filetype=c
 au FileType gnuplot setlocal fo-=t fo-=a
 
-" let g:tex_flavor = "latex"
-" let g:tex_fold_enabled=1
+" Bundle configs
+let g:vimtex_compiler_latexmk = {'callback' : 0} " disable callback
