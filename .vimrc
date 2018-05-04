@@ -19,9 +19,10 @@ set mouse=a
 set modeline
 set modelines=5
 set wildignorecase " ignore case when completing filenames and directories
+set background=dark
 
-highlight Pmenu ctermbg=blue ctermfg=white
-highlight PmenuSel ctermbg=white ctermfg=black
+"highlight Pmenu ctermbg=blue ctermfg=white
+"highlight PmenuSel ctermbg=white ctermfg=black
 nnoremap <CR> :noh<CR><CR>
 
 " Program editing
@@ -75,4 +76,3 @@ au BufRead,BufNewFile *.sqc set filetype=c
 au FileType gnuplot setlocal fo-=t fo-=a
 
 " Bundle configs
-let g:vimtex_compiler_latexmk = {'callback' : 0} " disable callback
