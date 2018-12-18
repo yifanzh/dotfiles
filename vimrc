@@ -27,6 +27,7 @@ nnoremap <CR> :noh<CR><CR>
 
 " Program editing
 set foldmethod=syntax
+set nofoldenable
 set textwidth=80
 set formatoptions+=orj
 set autoindent

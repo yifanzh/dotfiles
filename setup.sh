@@ -1,9 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/dotfiles/.gitignore_global ~/.gitignore_global
-ln -s ~/dotfiles/.oh-my-zsh ~/.oh-my-zsh
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.vim ~/.vim
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sfn ~/dotfiles/gitconfig ~/.gitconfig
+ln -sfn ~/dotfiles/gitignore_global ~/.gitignore_global
+ln -sfn ~/dotfiles/vimrc ~/.vimrc
+ln -sfn ~/dotfiles/vim ~/.vim
+ln -sfn ~/dotfiles/tmux.conf ~/.tmux.conf
+
+# load init script in bash and zsh
+cat ~/dotfiles/loader.sh >> ~/.zshrc
+cat ~/dotfiles/loader.sh >> ~/.bashrc
