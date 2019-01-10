@@ -57,7 +57,7 @@ inoremap <F6> <Esc>:tabnext<CR>
 nnoremap <F6> :tabnext<CR>
 inoremap <F7> =system("cite")<CR>
 
-set pastetoggle=<F12>
+set pastetoggle=<F9>
 
 map <MiddleMouse> <Nop>
 map <2-MiddleMouse> <Nop>

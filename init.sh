@@ -9,8 +9,6 @@ case "$-" in
   *) return
 esac
 
-export PAGER="less"
-
 # PATH config
 if [[ -d "$HOME/bin" ]]; then
   export PATH="$HOME/bin:$PATH"
@@ -34,6 +32,7 @@ alias gd='git diff'
 alias gl='git pull'
 alias gp='git push'
 alias ga='git add'
+alias gco='git checkout'
 
 # helpers
 function _fish_collapsed_pwd() {

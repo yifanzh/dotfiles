@@ -14,7 +14,10 @@ set expand-tilde on
 set convert-meta off
 set input-meta on
 set output-meta on
-set show-all-if-ambiguous on
 set visible-stats on
 #set -o vim
-TAB: menu-complete
+set show-all-if-ambiguous on
+#set show-all-if-unmodified on
+#set menu-complete-display-prefix on
+
+TAB:menu-complete

@@ -1,15 +1,9 @@
 [submodule ".vim/bundle/vim-airline"]
 	path = vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline
-[submodule ".vim/bundle/cscope_maps"]
-	path = vim/bundle/cscope_maps
-	url = https://github.com/chazy/cscope_maps
 [submodule ".vim/bundle/vim-textobj-argument"]
 	path = vim/bundle/vim-textobj-argument
 	url = https://github.com/gaving/vim-textobj-argument
-[submodule ".oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule ".vim/bundle/gruvbox"]
 	path = vim/bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox
