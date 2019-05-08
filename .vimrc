@@ -1,9 +1,8 @@
-call plug#begin('~/.vimplugged')
+call plug#begin('~/.vimplug/vim')
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+source ~/.localvimplug
 call plug#end()
-let g:deoplete#enable_at_startup = 1
 
 " General settings
 set hlsearch
@@ -41,9 +40,7 @@ set shiftwidth=2
 set expandtab
 
 " Disable connection to X11
-if !has('nvim')
-    set clipboard=exclude:.*
-endif
+set clipboard=exclude:.*
 
 " Key mapping
 map j gj
