@@ -1,10 +1,12 @@
-source ~/.localrc
-syntax on
-filetype plugin indent on
+call plug#begin('~/.vimplugged')
+Plug 'vim-airline/vim-airline'
+Plug 'morhetz/gruvbox'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+call plug#end()
+let g:deoplete#enable_at_startup = 1
 
 " General settings
 set hlsearch
-set nocompatible
 set ruler
 set showcmd
 set showmode
@@ -36,9 +38,6 @@ set smartindent
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-
-" Disable connection to X11
-set clipboard=exclude:.*
 
 " Key mapping
 map j gj
@@ -72,8 +71,12 @@ if &diff
     set diffopt+=iwhite " diff mode
 endif
 
-au BufRead,BufNewFile *.sqC set filetype=cpp
-au BufRead,BufNewFile *.sqc set filetype=c
-au FileType gnuplot setlocal fo-=t fo-=a
+if v:version >= 800
+  set termguicolors
+endif
 
-" Bundle configs
+"au BufRead,BufNewFile *.sqC set filetype=cpp
+"au BufRead,BufNewFile *.sqc set filetype=c
+"au FileType gnuplot setlocal fo-=t fo-=a
+
+source ~/.localrc
