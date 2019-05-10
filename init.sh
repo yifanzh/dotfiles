@@ -76,10 +76,10 @@ function _fish_collapsed_pwd() {
 
 # bash configs
 if [ -n "$BASH_VERSION" ]; then
-  source "$HOME/dotfiles/bash-init.sh"
+  source "$HOME/.dotfiles/bash-init.sh"
 fi
 
 # zsh configs
 if [[ -n "$ZSH_NAME" ]]; then
-  source "$HOME/dotfiles/zsh-init.zsh"
+  source "$HOME/.dotfiles/zsh-init.zsh"
 fi

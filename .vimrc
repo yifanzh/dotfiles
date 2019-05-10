@@ -1,7 +1,7 @@
 call plug#begin('~/.vimplug/vim')
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
-source ~/.localvimplug
+source ~/.localvim
 call plug#end()
 
 " General settings
@@ -28,8 +28,8 @@ set background=dark
 nnoremap <CR> :noh<CR><CR>
 
 " Program editing
-set foldmethod=syntax
-set nofoldenable
+"set foldmethod=syntax
+"set nofoldenable
 set textwidth=80
 set formatoptions+=orj
 set autoindent

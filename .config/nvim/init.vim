@@ -1,7 +1,7 @@
 call plug#begin('~/.vimplug/nvim')
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
-source ~/.localvimplug
+source ~/.localnvim
 call plug#end()
 
 " General settings
