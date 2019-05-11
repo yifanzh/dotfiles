@@ -1,4 +1,5 @@
 call plug#begin('~/.vimplug/vim')
+Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
 source ~/.localvim
@@ -7,32 +8,21 @@ call plug#end()
 " General settings
 set hlsearch
 set nocompatible
-set ruler
 set showcmd
 set showmode
 set number
-set incsearch
 set backupcopy=yes
-set history=50
-set backspace=indent,eol,start
-set statusline=[%02n]\ %f\ %(\[%M%R%H]%)%=\ %4l,%02c%2V\ %P%*
-set laststatus=2
 set mouse=a
 set modeline
 set modelines=5
 set wildignorecase " ignore case when completing filenames and directories
 set background=dark
 
-"highlight Pmenu ctermbg=blue ctermfg=white
-"highlight PmenuSel ctermbg=white ctermfg=black
 nnoremap <CR> :noh<CR><CR>
 
 " Program editing
-"set foldmethod=syntax
-"set nofoldenable
 set textwidth=80
 set formatoptions+=orj
-set autoindent
 set smartindent
 
 set softtabstop=2
@@ -77,9 +67,5 @@ endif
 if v:version >= 800
   set termguicolors
 endif
-
-"au BufRead,BufNewFile *.sqC set filetype=cpp
-"au BufRead,BufNewFile *.sqc set filetype=c
-"au FileType gnuplot setlocal fo-=t fo-=a
 
 source ~/.localrc
