@@ -2,7 +2,7 @@ call plug#begin('~/.vimplug/vim')
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
-source ~/.vimlocal
+source ~/.pluglocal
 call plug#end()
 
 " General settings
@@ -13,8 +13,8 @@ set showmode
 set number
 set backupcopy=yes
 set mouse=a
-set modeline
-set modelines=5
+"set modeline
+"set modelines=5
 set wildignorecase " ignore case when completing filenames and directories
 set background=dark
 
@@ -23,10 +23,11 @@ nnoremap <CR> :noh<CR><CR>
 " Program editing
 set textwidth=80
 set formatoptions+=orj
+set formatoptions-=t
 set smartindent
 
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 
 " Disable connection to X11
@@ -50,15 +51,6 @@ nnoremap <F6> :tabnext<CR>
 inoremap <F7> =system("cite")<CR>
 
 set pastetoggle=<F9>
-
-map <MiddleMouse> <Nop>
-map <2-MiddleMouse> <Nop>
-map <3-MiddleMouse> <Nop>
-map <4-MiddleMouse> <Nop>
-imap <MiddleMouse> <Nop>
-imap <2-MiddleMouse> <Nop>
-imap <3-MiddleMouse> <Nop>
-imap <4-MiddleMouse> <Nop>
 
 if &diff
     set diffopt+=iwhite " diff mode
