@@ -2,7 +2,7 @@ call plug#begin('~/.vimplug/vim')
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
-source ~/.localvim
+source ~/.vimlocal
 call plug#end()
 
 " General settings
