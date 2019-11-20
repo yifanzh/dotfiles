@@ -1,8 +1,10 @@
-call plug#begin('~/.vimplug/vim')
+set encoding=utf-8
+call plug#begin('~/.vimplug/')
 Plug 'tpope/vim-sensible'
-Plug 'vim-airline/vim-airline'
-Plug 'morhetz/gruvbox'
-source ~/.pluglocal
+Plug 'srstevenson/vim-picker'
+Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
+source ~/.config/locals/vimpluglocal
 call plug#end()
 
 " General settings
@@ -13,15 +15,22 @@ set showmode
 set number
 set backupcopy=yes
 set mouse=a
-"set modeline
-"set modelines=5
 set wildignorecase " ignore case when completing filenames and directories
+set ignorecase " ignore case when searching (/)
+set smartcase " unless search pattern includes uppercase character
 set background=dark
+set cursorline
+set foldmethod=syntax
+set foldlevel=3
 
-nnoremap <CR> :noh<CR><CR>
+set splitbelow
+set splitright
+
 
 " Program editing
-set textwidth=80
+set textwidth=100
+set colorcolumn=+1
+
 set formatoptions+=orj
 set formatoptions-=t
 set smartindent
@@ -30,27 +39,25 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+set switchbuf=usetab
+set completeopt-=preview
+
 " Disable connection to X11
-set clipboard=exclude:.*
+" If this is disabled, + and * won't work
+" set clipboard=exclude:.*
 
 " Key mapping
 map j gj
 map k gk
-" nmap <F3> a<C-R>=strftime("%A %Y-%m-%d %H:%M:%S")<CR><Esc>
-" imap <F3> <C-R>=strftime("%A %Y-%m-%d %H:%M:%S")<CR>
+
 nnoremap <F2> za
-inoremap <F2> <Esc>zai
-nnoremap <F3> zA
-nnoremap <F4> zi
-inoremap <F4> <Esc>zi
 
 inoremap <F5> <Esc>:tabprevious<CR>
 nnoremap <F5> :tabprevious<CR>
 inoremap <F6> <Esc>:tabnext<CR>
 nnoremap <F6> :tabnext<CR>
-inoremap <F7> =system("cite")<CR>
 
-set pastetoggle=<F9>
+nnoremap <CR> :noh<CR><CR>
 
 if &diff
     set diffopt+=iwhite " diff mode
@@ -60,4 +67,5 @@ if v:version >= 800
   set termguicolors
 endif
 
-source ~/.localrc
+let loaded_matchparen = 1
+source ~/.config/locals/vimlocal
