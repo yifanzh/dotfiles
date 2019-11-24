@@ -1,16 +1,14 @@
 #!/bin/bash
-mkdir -p ~/.config
+mkdir -p ~/.config/local
 
-ln -sfn ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -sfn ~/.dotfiles/.gitignore_global ~/.gitignore_global
-ln -sfn ~/.dotfiles/.vimrc ~/.vimrc
-ln -sfn ~/.dotfiles/.vim ~/.vim
-ln -sfn ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -sfn ~/.dotfiles/.inputrc ~/.inputrc
+ln -sfn ~/dotfiles/.gitconfig ~/.gitconfig
+ln -sfn ~/dotfiles/.gitignore_global ~/.gitignore_global
+ln -sfn ~/dotfiles/.vimrc ~/.vimrc
+ln -sfn ~/dotfiles/.vim ~/.vim
+ln -sfn ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sfn ~/dotfiles/.inputrc ~/.inputrc
+ln -sfn ~/dotfiles/.zshrc ~/.zshrc
+ln -sfn ~/dotfiles/.bashrc ~/.bashrc
 
-ln -sfn ~/.dotfiles/.config/fish ~/.config/fish
-ln -sfn ~/.dotfiles/.config/nvim ~/.config/nvim
-
-# load init script in bash and zsh
-#cat ~/.dotfiles/loader.sh >> ~/.zshrc
-#cat ~/.dotfiles/loader.sh >> ~/.bashrc
+ln -sfn ~/dotfiles/.config/fish ~/.config/fish
+ln -sfn ~/dotfiles/.config/nvim ~/.config/nvim
