@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir -p ~/.config/local
+mkdir -p ~/.config/locals
 
 ln -sfn ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sfn ~/dotfiles/.gitignore_global ~/.gitignore_global

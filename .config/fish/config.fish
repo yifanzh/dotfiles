@@ -1,4 +1,3 @@
-set fish_color_cwd 87ff00
 
 if test -r ~/.config/locals/fishlocal
     source ~/.config/locals/fishlocal

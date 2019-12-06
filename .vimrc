@@ -18,7 +18,7 @@ set mouse=a
 set wildignorecase " ignore case when completing filenames and directories
 set ignorecase " ignore case when searching (/)
 set smartcase " unless search pattern includes uppercase character
-set background=dark
+set background=light
 set cursorline
 set foldmethod=syntax
 set foldlevel=3
