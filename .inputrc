@@ -5,9 +5,11 @@
 "\e[3~": delete-char
 "\e[2~": quoted-insert
 "\e[5C": forward-word
-"\e[5D": backward-word
 "\e\e[C": forward-word
+"\e[1;5C": forward-word
+"\e[5D": backward-word
 "\e\e[D": backward-word
+"\e[1;5D": backward-word
 
 set completion-ignore-case On
 set expand-tilde on
