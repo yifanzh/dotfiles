@@ -7,9 +7,11 @@
 "\e[5C": forward-word
 "\e\e[C": forward-word
 "\e[1;5C": forward-word
+"\eOC": forward-word
 "\e[5D": backward-word
 "\e\e[D": backward-word
 "\e[1;5D": backward-word
+"\eOD": backward-word
 
 set completion-ignore-case On
 set expand-tilde on

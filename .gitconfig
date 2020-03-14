@@ -7,7 +7,7 @@
     autocrlf = input
     pager = less -+XF
 [alias]
-    dag = log --graph --oneline --decorate
+    dag = log --graph --oneline --decorate --branches
     co = checkout
     br = branch
     ci = commit
@@ -18,3 +18,9 @@
     sslverify = true
 [rebase]
     instructionFormat = (%an) %s
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool]
+    prompt = false
+    keepBackup = false

@@ -5,7 +5,7 @@ setopt PROMPT_SUBST
 autoload -Uz compinit
 compinit
 
-export PROMPT="%F{12}%n@%m$(_fish_collapsed_pwd)%f"$'\n'"$ "
+export PROMPT="%F{12}%n@%m $(pwd)%f"$'\n'"$ "
 
 bindkey -v
 bindkey '^r' history-incremental-search-backward
