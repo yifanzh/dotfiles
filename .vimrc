@@ -1,6 +1,11 @@
 set encoding=utf-8
 call plug#begin('~/.vimplug/')
 Plug 'tpope/vim-sensible'
+Plug 'Osse/vim-picker'
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+Plug 'dag/vim-fish'
+Plug 'tpope/vim-commentary'
 source ~/.config/locals/vimpluglocal
 call plug#end()
 
@@ -57,4 +62,8 @@ if exists('+termguicolors')
 endif
 
 let loaded_matchparen = 1
+
+nmap <c-n> <Plug>(PickerEdit)
+nmap <c-p> <Plug>(PickerBuffer)
+
 source ~/.config/locals/vimlocal
