@@ -24,3 +24,7 @@
 [mergetool]
     prompt = false
     keepBackup = false
+[url "ssh://git@github.com/ContextLogic"]
+  insteadOf = https://github.com/ContextLogic
+[pull]
+	ff = only
