@@ -1,3 +1,4 @@
-if test -r ~/.config/locals/fishlocal
-    source ~/.config/locals/fishlocal
+bass source ~/dotfiles/shared.sh
+if test -r ~/.config/locals/fish.fish
+    source ~/.config/locals/fish.fish
 end
