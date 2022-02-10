@@ -4,6 +4,8 @@ touch ~/.config/locals/vim.vim
 touch ~/.config/locals/vimplug.vim
 touch ~/.config/locals/shell.sh
 touch ~/.config/locals/fish.fish
+touch ~/.config/locals/zshrc
+touch ~/.config/locals/bashrc
 
 ln -sfn ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sfn ~/dotfiles/.gitignore_global ~/.gitignore_global
@@ -16,3 +18,4 @@ ln -sfn ~/dotfiles/.bashrc ~/.bashrc
 
 ln -sfn ~/dotfiles/.config/fish ~/.config/fish
 ln -sfn ~/dotfiles/.config/nvim ~/.config/nvim
+ln -sfn ~/dotfiles/.config/shell.sh ~/.config/shell.sh

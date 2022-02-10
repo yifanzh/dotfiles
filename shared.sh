@@ -1,2 +1,0 @@
-export GITLAB_USERNAME=yifzhang-wish
-export GITLAB_ACCESS_TOKEN=az9Tb7Mz7nC2CFMxnorw

@@ -1,5 +1,4 @@
-source ~/dotfiles/shared.sh
-source ~/.config/locals/shell.sh
+source ~/.config/shell.sh
 
 setopt PROMPT_SUBST
 
@@ -26,3 +25,5 @@ bindkey 'OD' backward-word
 
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+
+source ~/.config/locals/zshrc
