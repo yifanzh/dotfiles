@@ -6,7 +6,6 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'dag/vim-fish'
 Plug 'tpope/vim-commentary'
-source ~/.config/locals/vimplug.vim
 call plug#end()
 
 " General settings
@@ -66,4 +65,3 @@ let loaded_matchparen = 1
 nmap <c-n> <Plug>(PickerEdit)
 nmap <c-p> <Plug>(PickerBuffer)
 
-source ~/.config/locals/vim.vim

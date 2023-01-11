@@ -1,11 +1,5 @@
 #!/bin/bash
-mkdir -p ~/.config/locals
-touch ~/.config/locals/vim.vim
-touch ~/.config/locals/vimplug.vim
-touch ~/.config/locals/shell.sh
-touch ~/.config/locals/fish.fish
-touch ~/.config/locals/zshrc
-touch ~/.config/locals/bashrc
+mkdir -p ~/.config
 
 ln -sfn ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sfn ~/dotfiles/.gitignore_global ~/.gitignore_global

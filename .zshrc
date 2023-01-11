@@ -1,5 +1,3 @@
-source ~/.config/shell.sh
-
 setopt PROMPT_SUBST
 
 autoload -Uz compinit
@@ -26,4 +24,4 @@ bindkey 'OD' backward-word
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 
-source ~/.config/locals/zshrc
+source ~/.config/shell.sh
